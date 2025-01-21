@@ -392,12 +392,24 @@ footer{
   .empowering-text{
     text-align: center;
   }
+
+  .empowering-text p{
+    padding:1rem 2.5rem
+  }
   
 
   .curriculum{
   grid-template-columns: repeat(1, 1fr);
   }
 
+  .curriculum p{
+    padding: 2rem 5rem;
+  }
+
+  .curriculum h3{
+    padding-bottom: .1rem;
+  
+  }
   .next{
     display: none;
   }
@@ -410,6 +422,18 @@ footer{
     grid-template-columns: repeat(2,1fr);
     padding: 0rem 1rem;
   }
+
+
+  .box-btn-two{
+    padding: .5rem .4rem;
+ 
+  }
+  
+  .box-btn-three{
+    padding: .5rem .4rem;
+
+  }
+  
 
   .footer-section{
     grid-template-columns:1fr;
@@ -433,4 +457,37 @@ footer{
     padding-left:1rem;
   }
   
+}
+
+
+
+@media screen and (min-width:577px) and (max-width:998px){
+
+  .list-item{
+    display: none;
+  }
+  .curriculum{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ }
+
+.curriculum .middle{
+  grid-column: span 2;
+}
+
+    .curriculum p{
+      padding: 2rem 1rem;
+    }
+
+
+  .container .box-1{
+    display: none;
+  }
+
+
+  .container{
+    grid-template-columns: repeat(2,1fr);
+    padding: 0rem 1rem;
+  }
+
 }
